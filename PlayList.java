@@ -116,7 +116,7 @@ class PlayList {
         if(size == 0 || i < 0 || i >= size)
             return;
 
-        for (int j = i; j <= size; j++) {
+        for (int j = i; j < size; j++) {
             this.tracks[j] = this.tracks[j+1];
         }
         this.tracks[size -1] = null;
